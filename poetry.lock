@@ -2,14 +2,14 @@
 
 [[package]]
 name = "aibusy"
-version = "0.0.5"
+version = "0.0.7"
 description = "AI but symple - Base Module"
 optional = false
 python-versions = "<3.12,>=3.10"
 groups = ["main"]
 files = [
-    {file = "aibusy-0.0.5-py3-none-any.whl", hash = "sha256:bade0f9e6142e3b9afac6a41bd6ef739373b230f5618355baf532c676aa6d4bf"},
-    {file = "aibusy-0.0.5.tar.gz", hash = "sha256:c5c36919ef8f796ec5f92a5da64103f5722c1519b21eea084e77a2f41b1f8654"},
+    {file = "aibusy-0.0.7-py3-none-any.whl", hash = "sha256:7557a57474b7ec4d43b984ae3f1e316ef84c369e8ac2e7448f2ed4b690f6f707"},
+    {file = "aibusy-0.0.7.tar.gz", hash = "sha256:aeeaab209da978ab84edd2fae7460090759cbf6be067a36e95f44bc242bf3974"},
 ]
 
 [[package]]
@@ -549,4 +549,4 @@ markers = {dev = "python_version == \"3.10\""}
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.12"
-content-hash = "a5a0aa1506cb68774d8c216bc89c5fca057b8091caaf75daf59e49605dad98bf"
+content-hash = "8f0bce6ef57bdd1e0a706a54492e972b4e801a9e563ded8d88a36f7bfe1c5ad1"

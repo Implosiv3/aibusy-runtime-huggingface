@@ -14,6 +14,7 @@ class HuggingfaceRuntimePlugin(
     """
     
     def register(
+        self,
         builder: EngineBuilder
     ):
         builder.services.register(
