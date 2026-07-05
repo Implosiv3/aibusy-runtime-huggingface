@@ -1,6 +1,7 @@
 # TODO: Should this be in 'aibusy' (?)
 from aibusy.service.huggingface.abstract import HuggingfaceClient
 from huggingface_hub import snapshot_download
+from pathlib import Path
 from typing import Union
 
 
@@ -13,9 +14,13 @@ class DefaultHuggingfaceClient(
         *,
         repository: str,
         revision: Union[str, None] = None,
-    ) -> str:
-
-        return snapshot_download(
+        local_dir: Union[str, None] = None
+    ) -> Path:
+        path = snapshot_download(
             repo_id = repository,
             revision = revision,
+            local_dir = local_dir,
+            local_dir_use_symlinks = False
         )
+
+        return Path(path)
