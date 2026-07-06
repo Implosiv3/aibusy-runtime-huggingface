@@ -13,13 +13,17 @@ class DefaultHuggingfaceClient(
         self,
         *,
         repository: str,
-        revision: Union[str, None] = None,
-        local_dir: Union[str, None] = None
+        revision: Union[str, None],
+        local_dir: str,
+        allow_patterns: Union[list[str], None] = None,
+        ignore_patterns: Union[list[str], None] = None,
     ) -> Path:
         path = snapshot_download(
             repo_id = repository,
             revision = revision,
-            local_dir = local_dir
+            local_dir = local_dir,
+            allow_patterns = allow_patterns,
+            ignore_patterns = ignore_patterns
         )
 
         return Path(path)

@@ -1,6 +1,6 @@
 [project]
 name = "aibusy-runtime-huggingface"
-version = "0.0.4"
+version = "0.0.5"
 description = "AI but symple - Huggingface Runtime Module"
 authors = [
     {name = "danialcala94", email = "danielalcalavalera@gmail.com"}
@@ -19,6 +19,7 @@ packages = [{include = "aibusy_runtime_huggingface", from = "src"}]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
+pytest-asyncio = ">=1.4.0"
 
 [tool.pytest.ini_options]
 markers = [
